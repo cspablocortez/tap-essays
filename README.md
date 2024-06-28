@@ -43,3 +43,13 @@ $ bundle
     user-select: none;
 }
 ```
+
+### File Structure
+
+(17:00) 
+
+Create these Jekyll-specific folders: `_layouts`, `_posts`, `_includes`.
+
+```sh
+$ mkdir _layouts _posts _includes
+```
