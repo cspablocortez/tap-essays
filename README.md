@@ -27,3 +27,8 @@ $ bundle init
 gem "jekyll"
 ```
 
+(16:52) Run `bundle` to install jekyll.
+
+```sh
+$ bundle
+```
