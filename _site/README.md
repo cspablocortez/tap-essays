@@ -32,14 +32,3 @@ gem "jekyll"
 ```sh
 $ bundle
 ```
-
-(16:56) Update CSS to prevent text from being selected:
-
-```css
-.container p {
-    display: none;
-    text-align: center;
-    font-size: 1.5rem;
-    user-select: none;
-}
-```
