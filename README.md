@@ -56,6 +56,8 @@ $ mkdir _layouts _posts _includes
 
 ## Step 1
 
-Create default HTML template.
+Create default HTML template. Copy the contents of `index.html` into `default.html`.
 
 `$ touch _layouts/default.html`
+
+Next, the placeholder paragraph elements with the Liquid content tag: `{{ content}}`.
