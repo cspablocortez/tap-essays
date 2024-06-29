@@ -61,3 +61,7 @@ Create default HTML template. Copy the contents of `index.html` into `default.ht
 `$ touch _layouts/default.html`
 
 Next, the placeholder paragraph elements with the Liquid content tag: `{{ content }}`. Don’t forget the front matter lines at the top of the file.
+
+## Step 2
+
+Update `index.html` file to be a simple markdown file with plain text content, all HTML info will have been moved to the `default.html`.

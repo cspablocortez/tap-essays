@@ -32,3 +32,36 @@ gem "jekyll"
 ```sh
 $ bundle
 ```
+
+(16:56) Update CSS to prevent text from being selected:
+
+```css
+.container p {
+    display: none;
+    text-align: center;
+    font-size: 1.5rem;
+    user-select: none;
+}
+```
+
+# File Structure
+
+(17:00) 
+
+Create these Jekyll-specific folders: `_layouts`, `_posts`, `_includes`.
+
+```sh
+$ mkdir _layouts _posts _includes
+```
+
+## Step 1
+
+Create default HTML template. Copy the contents of `index.html` into `default.html`.
+
+`$ touch _layouts/default.html`
+
+Next, the placeholder paragraph elements with the Liquid content tag: `{{ content }}`. Don’t forget the front matter lines at the top of the file.
+
+## Step 2
+
+Update `index.html` file to be a simple markdown file with plain text content, all HTML info will have been moved to the `default.html`.
