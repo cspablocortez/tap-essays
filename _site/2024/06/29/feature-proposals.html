@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Tap Essay</title>
+    <style>
+
+        /* Font */
+        @import url("https://api.fontshare.com/v2/css?f[]=satoshi@700,701,401,400&display=swap");
+
+        body {
+            font-family: 'Satoshi', sans-serif;
+            display: flex;
+            flex-direction: column;
+            /* background-color: red;  */
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            /* border: 1px solid black; */
+            height: 260px;
+            /* background-color: #5ebbf9; */
+            width: 100%;
+            margin: auto;
+        }
+
+        .container p {
+            display: none;
+            text-align: center;
+            font-size: 1.5rem;
+            user-select: none;
+            animation-duration: 1.4s;
+        }
+
+        .container:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>It would be good to update this format so only the headings are animated.</p>
+
+<p>This would make each sentence be emphasized less.</p>
+
+<p>But it also means that it’d be easier to get through shorter, more structured
+documents.</p>
+
+<p>Here are some features that would be neat to have.</p>
+
+<ol>
+  <li>
+    <p>Pressing spacebar or the arrow keys should advance the document, too.</p>
+  </li>
+  <li>
+    <p>The home page should look <em>much</em> nicer (maybe include some images?)</p>
+  </li>
+  <li>
+    <p>Ensure good mobile quality</p>
+  </li>
+</ol>
+
+    </div>
+
+    <script src="/assets/js/tapEssay.js">
+    </script>
+</body>
+</html>
