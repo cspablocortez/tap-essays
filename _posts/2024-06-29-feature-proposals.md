@@ -17,4 +17,8 @@ Here are some features that would be neat to have.
 
 2. The home page should look *much* nicer (maybe include some images?)
 
-3. Ensure good mobile quality
+3. Ensure mobile works
+
+4. Make lists work
+
+5. Make entire screen clickable (increase container size)
