@@ -21,6 +21,18 @@ Guide](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 ```
 
+(15:03) Next, we add the class name of our animation within the JavaScript code
+block that makes the paragraph.
+
+```javascript
+ // Show the current paragraph code-block
+if (currentIndex < paragraphs.length) {
+    paragraphs[currentIndex].style.display = 'block';
+    paragraphs[currentIndex].classList.add('animate__fadeInRight'); // add this line
+    currentIndex++;
+}
+```
+
 
 
 

@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show the current paragraph
         if (currentIndex < paragraphs.length) {
             paragraphs[currentIndex].style.display = 'block';
+            paragraphs[currentIndex].classList.add('animate__fadeInRight');
             currentIndex++;
         }
 
