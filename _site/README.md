@@ -76,5 +76,11 @@ We will define three new layouts:
 
 To do this, first we will move the content within the `<script>` over to the `tapped.html`. We will also have to update our CSS to produce a readable document.
 
+## Step 4
+
+(17:34) We refactor our code to include an `assets` directory to hold CSS and JavaScript files. We’ve moved the script from `tapped.html` to its own file.
+
+
+
 
 

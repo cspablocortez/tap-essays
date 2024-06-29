@@ -1,15 +1,11 @@
 ---
-layout: tapped
+layout: default
 ---
 
-Hello, World! This is the homepage for the tap essays app. 
+# All posts:
 
-Here is a second sentence, for example.
-
-All we do is write.
-
-On a new line.
-
-And the computer *knows*.
-
-How to **change** what it *shows*.
+{% for post in site.posts %}
+<ul>
+    <h2><a href="{{ post.url}}">{{ post.title }}</a></h2>
+</ul>
+{% endfor %}
