@@ -13,6 +13,17 @@ Guide](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
 
 ### Devlog
 
+#### Saturday Jun 29
+
+(14:53) Add link to animate.css library (using CDN) inside `tapped.html`:
+
+```html 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+```
+
+
+
+
 #### Fri Jun 28
 
 (16:48) Turn this into a Jekyll site to leverage markdown -> HTML conversion.
