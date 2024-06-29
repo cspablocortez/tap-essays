@@ -35,6 +35,7 @@ if (currentIndex < paragraphs.length) {
 
 
 
+---
 
 #### Fri Jun 28
 
