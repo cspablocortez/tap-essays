@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const containerDiv = document.querySelector('.container');
     const paragraphs = containerDiv.getElementsByTagName('p');
+
+    const animationList = ['animate__bounceInUp', 'animate__fadeInRight', 'animate__fadeInTopLeft', 'animate__flipInX', 'animate__jackInTheBox', 'animate__zoomIn'];
+
     let currentIndex = 0;
 
     containerDiv.addEventListener('click', () => {
@@ -12,7 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show the current paragraph
         if (currentIndex < paragraphs.length) {
             paragraphs[currentIndex].style.display = 'block';
-            paragraphs[currentIndex].classList.add('animate__fadeInRight');
+
+            // Pick a random class from animationList
+            const randomIndex = Math.floor(Math.random() * animationList.length);
+
+            paragraphs[currentIndex].classList.add(animationList[randomIndex]);
             currentIndex++;
         }
 
