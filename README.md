@@ -60,8 +60,21 @@ Create default HTML template. Copy the contents of `index.html` into `default.ht
 
 `$ touch _layouts/default.html`
 
-Next, the placeholder paragraph elements with the Liquid content tag: `{{ content }}`. Don’t forget the front matter lines at the top of the file.
+Next, replace the placeholder paragraph elements with the Liquid content tag: `{{ content }}`. Don’t forget the front matter lines at the top of the file.
 
 ## Step 2
 
 Update `index.html` file to be a simple markdown file with plain text content, all HTML info will have been moved to the `default.html`.
+
+## Step 3
+
+We will define three new layouts:
+
+- default (static content)
+- tapped (one paragraph at a time)
+- typed (automatically typed content)
+
+To do this, first we will move the content within the `<script>` over to the `tapped.html`. We will also have to update our CSS to produce a readable document.
+
+
+

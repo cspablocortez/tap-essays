@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: tapped
 ---
 
 Hello, World! This is the homepage for the tap essays app. 

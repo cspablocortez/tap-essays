@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tap Essays</title>
+    <title>Essay</title>
     <style>
 
         /* Font */
@@ -13,24 +13,22 @@
 
         body {
             font-family: 'Satoshi', sans-serif;
-            display: flex;
-            flex-direction: column;
+            /* display: flex; */
+            /* flex-direction: column; */
             /* background-color: red;  */
-            height: 100vh;
-            overflow: hidden;
+            /* height: 100vh; */
+            /* overflow: hidden; */
         }
 
         .container {
             /* border: 1px solid black; */
-            height: 260px;
+            /* height: 260px; */
             /* background-color: #5ebbf9; */
             width: 100%;
             margin: auto;
         }
 
         .container p {
-            display: none;
-            text-align: center;
             font-size: 1.5rem;
             user-select: none;
         }
@@ -44,33 +42,5 @@
     <div class="container">
         {{ content }}
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const containerDiv = document.querySelector('.container');
-            const paragraphs = containerDiv.getElementsByTagName('p');
-            let currentIndex = 0;
-
-            containerDiv.addEventListener('click', () => {
-                // Hide all paragraphs first
-                for (let i = 0; i < paragraphs.length; i++) {
-                    paragraphs[i].style.display = 'none';
-                }
-
-                // Show the current paragraph
-                if (currentIndex < paragraphs.length) {
-                    paragraphs[currentIndex].style.display = 'block';
-                    currentIndex++;
-                }
-
-                // Reset the index if it reaches the end
-                if (currentIndex >= paragraphs.length) {
-                    currentIndex = 0;
-                }
-
-            });
-        });
-
-    </script>
 </body>
 </html>
