@@ -44,7 +44,7 @@ $ bundle
 }
 ```
 
-### File Structure
+# File Structure
 
 (17:00) 
 
@@ -53,3 +53,9 @@ Create these Jekyll-specific folders: `_layouts`, `_posts`, `_includes`.
 ```sh
 $ mkdir _layouts _posts _includes
 ```
+
+## Step 1
+
+Create default HTML template.
+
+`$ touch _layouts/default.html`
