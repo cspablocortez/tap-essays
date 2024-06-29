@@ -15,12 +15,15 @@ Guide](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/)
 
 #### Saturday Jun 29
 
+# Step 1 - Update HTML
+
 (14:53) Add link to animate.css library (using CDN) inside `tapped.html`:
 
 ```html 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 ```
 
+# Step 2 - Update JavaScript
 (15:03) Next, we add the class name of our animation within the JavaScript code
 block that makes the paragraph.
 
@@ -33,7 +36,20 @@ if (currentIndex < paragraphs.length) {
 }
 ```
 
+# Step 3 - Update CSS
 
+Update the `tapped.html` file in the CSS section that sets the values of the 
+container paragraphs.
+
+```css
+.container p {
+    display: none;
+    text-align: center;
+    font-size: 1.5rem;
+    user-select: none;
+    animation-duration: 2s; /* new line */
+}
+```
 
 ---
 
