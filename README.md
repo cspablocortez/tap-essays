@@ -80,6 +80,10 @@ To do this, first we will move the content within the `<script>` over to the `ta
 
 (17:34) We refactor our code to include an `assets` directory to hold CSS and JavaScript files. We’ve moved the script from `tapped.html` to its own file.
 
+# JavaScript HTML parsing
+
+First we create constant values for markup tags, e.g., headers, paragraphs, block quotes, code blocks, etc.
+
 
 
 
