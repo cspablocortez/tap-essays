@@ -1,8 +1,11 @@
 ---
-layout: default
+layout: mac-theme
 ---
 
 # All posts:
+
+
+
 
 {% for post in site.posts %}
 <ul>

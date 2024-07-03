@@ -1,0 +1,168 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@700,701,401,400&display=swap");
+
+:root {
+    --space: 1rem;
+    --space-nav: 2px;
+    --window-title-padding: calc(var(--space)/2) var(--space);
+    --window-border: 1px solid var(--color-window-border);
+    --content-width: 36rem;
+  
+    --wrapper-width: 65rem;
+    --nav-height: 2.8rem;
+  
+    --font-size-intro: clamp(1.1rem, 4vw, 1.5rem);
+    --font-size-body: clamp(1.05rem, 3vw, 1.23rem);
+    --font-size-caption: clamp(0.9rem, 3vw, 1.1rem);
+    --font-size-meta: 0.9rem;
+    --font-size-small: 0.8rem;
+    --font-size-window-header: clamp(1rem, 3vw, 1.15rem);
+  
+    --monospace: 'SF Mono', SFMono-Regular, ui-monospace, 'DejaVu Sans Mono', Menlo, Consolas, monospace;
+    --sans: "Satoshi", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    --title: "Satoshi", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  
+    --color-nav-background: #FFF;
+    --color-nav-text: #111;
+    --color-body-background: #D9D9D9;
+    --color-window-border: #000;
+    --color-window-title-background: #fff;
+    --color-window-title-text: #111;
+    --color-window-content-background: #fff;
+    --color-window-hover: #f1f1f1;
+    --color-text: #101010;
+    --color-text-meta: #757575;
+    --color-gray: #C5C5C5;
+    --color-diagram: #E3E3E3;
+    --color-link-hover: var(--color-window-title-background);
+}
+
+@media screen and (min-width: 700px) {
+  :root {
+    --space: 1.25rem;
+    --space-nav: 1.25rem;
+  }
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    background: var(--color-nav-background);
+}
+  
+  *,
+  *:after,
+  *:before {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    width: 100dvw;
+    font: var(--font-size-body)/1.4 var(--sans);
+    color: var(--color-text);
+    font-variant-numeric: oldstyle-nums;
+    min-height: 100dvh;
+    background: var(--color-body-background);
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    background-image: url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_240_7083)'%3E%3Crect width='4' height='4' fill='white'/%3E%3Crect width='1' height='1' fill='%23D9D9D9'/%3E%3Crect x='1' y='1' width='1' height='1' fill='%23D9D9D9'/%3E%3Crect x='2' width='1' height='1' fill='%23D9D9D9'/%3E%3Crect x='3' y='1' width='1' height='1' fill='%23D9D9D9'/%3E%3Crect x='2' y='2' width='1' height='1' fill='%23D9D9D9'/%3E%3Crect x='1' y='3' width='1' height='1' fill='%23D9D9D9'/%3E%3Crect y='2' width='1' height='1' fill='%23D9D9D9'/%3E%3Crect x='3' y='3' width='1' height='1' fill='%23D9D9D9'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_240_7083'%3E%3Crect width='4' height='4' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-size: 15px;
+}
+
+.font-code {
+    font-family: var(--monospace);
+}
+
+@media screen and (min-width: 600px) {
+    body {
+      line-height: 1.45;
+    }
+}
+
+hr {
+    border: 1px solid var(--color-gray);
+    margin: 2rem 0;
+}
+
+iframe,
+img,
+video {
+  max-width: 100%;
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+p img {
+  margin: 0 !important;
+}
+
+figure img {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.small {
+  font-size: var(--font-size-small);
+}
+
+main {
+  max-width: var(--wrapper-width);
+  margin: 0 auto;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space);
+}
+
+.nav-logo {
+  display: block;
+
+  svg {
+    display: block;
+  }
+}
+
+/* NAVIGATION */
+.nav {
+    background: var(--color-nav-background);
+    margin-bottom: var(--space-nav);
+    padding: 0 var(--space);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    align-items: center;
+    border-bottom: 1px solid var(--color-body-background);
+  }
+  
+  .nav-list-item {
+    height: var(--nav-height);
+    display: grid;
+    place-items: center;
+    font-size: var(--font-size-meta);
+    color: var(--color-nav-text);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0 calc(var(--space) / 2);
+  }
+  
+  .nav-list {
+    display: flex;
+  }
+  
+  .nav-list-item:focus,
+  .nav-list-item:hover {
+    background: var(--color-window-content-background);
+    color: var(--color-text);
+  }
